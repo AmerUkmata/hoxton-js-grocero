@@ -22,55 +22,64 @@ let items = [
     id: 2, 
     src: 'assets/icons/002-carrot.svg',
     name: "carrot",
-    price: 0.35 
+    price: 0.35,
+    howmany: 1
   },
   {
     id: 3, 
     src: 'assets/icons/003-apple.svg',
     name: "apple",
-    price: 0.35 
+    price: 0.35,
+    howmany: 1
   },
   {
     id: 4, 
     src: 'assets/icons/004-apricot.svg',
     name: "apricot",
-    price: 0.35 
+    price: 0.35,
+    howmany: 1
   },
   {
     id: 5, 
     src: 'assets/icons/005-avocado.svg',
     name: "avocado",
-    price: 0.35 
+    price: 0.35, 
+    howmany: 1
   },
   {
     id: 6, 
     src: 'assets/icons/006-bananas.svg',
     name: "bananas",
-    price: 0.35 
+    price: 0.35, 
+    howmany: 1
   },
   {
     id: 7, 
     src: 'assets/icons/007-bell-pepper.svg',
     name: "bell-pepper",
-    price: 0.35 
+    price: 0.35, 
+    howmany: 1
   },
   {
     id: 8, 
     src: 'assets/icons/008-berry.svg',
     name: "berry",
-    price: 0.35 
+    price: 0.35, 
+    howmany: 1
   },
   {
     id: 9, 
     src: 'assets/icons/009-blueberry.svg',
     name: "blueberry",
-    price: 0.35 
+    price: 0.35,
+    howmany: 1
   },
   {
     id: 10,
     src: 'assets/icons/010-eggplant.svg', 
     name: "eggplant",
-    price: 0.35 
+    price: 0.35, 
+    howmany: 1
   }
 ]
 {/* <li>
