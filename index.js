@@ -114,7 +114,6 @@ for (let fruit of items) {
 
 
 function cart(fruit){
-  let count = 1
   let liEl = document.createElement('li')
 
   let imgEl = document.createElement('img')
