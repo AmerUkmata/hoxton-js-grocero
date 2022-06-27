@@ -9,41 +9,6 @@ This is how an item object should look like
 }
 
 */
-let id = [
-  {
-    src: ''
-  },
-  {
-    src: 'assets/icons/001-beetroot.svg'
-  },
-  {
-    src: 'assets/icons/002-carrot.svg'
-  },
-  {
-    src: 'assets/icons/003-apple.svg'
-  },
-  {
-    src: 'assets/icons/004-apricot.svg'
-  },
-  {
-    src: 'assets/icons/005-avocado.svg'
-  },
-  {
-    src: 'assets/icons/006-bananas.svg'
-  },
-  {
-    src: 'assets/icons/007-bell-pepper.svg'
-  },
-  {
-    src: 'assets/icons/008-berry.svg'
-  },
-  {
-    src: 'assets/icons/009-blueberry.svg'
-  },
-  {
-    src: 'assets/icons/010-eggplant.svg'
-  }
-]
 let items = [
 
   {
@@ -124,6 +89,7 @@ function store(fruit) {
   imgEl.alt = fruit.name
   let buttonEl = document.createElement('button')
   buttonEl.textContent = 'Add to cart'
+  buttonEl.addEventListener("click", ()=>cart(fruit))
 
   let theul = document.querySelector('.item-list.store--item-list')
     theul.append(liEl)
@@ -146,3 +112,32 @@ for (let fruit of items) {
   <button class="quantity-btn add-btn center">+</button>
 </li> */}
 
+
+function cart(fruit){
+  let count = 1
+  let liEl = document.createElement('li')
+
+  let imgEl = document.createElement('img')
+  imgEl.src = fruit.src
+  imgEl.alt = fruit.name
+  imgEl.className = '.cart--item-icon'
+
+  let pEl = document.createElement('p')
+  pEl.textContent = fruit.name
+
+  let buttonEl = document.createElement('button')
+  buttonEl.className = '.quantity-btn.remove-btn center'
+  buttonEl.textContent = '-'
+
+  let spanEl = document.createElement('span')
+  spanEl.className = 'quantity-text center'
+  spanEl.textContent = fruit.howmany
+  
+  let button2El = document.createElement('button')
+  buttonEl.className = '.quantity-btn.add-btn center'
+  buttonEl.textContent = '+'
+
+  let theul = document.querySelector('.item-list.cart--item-list')
+    theul.append(liEl)
+    liEl.append(imgEl, pEl, buttonEl, spanEl, button2El)
+}
